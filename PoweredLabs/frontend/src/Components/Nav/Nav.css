@@ -6,13 +6,23 @@
 }
 
 .nav-header-link {
-  margin: 0 20px;
+  margin: 0 10px;
   color: white;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.nav-header-link:hover {
+  color: rgb(241, 190, 185);
 }
 
 .nav-header-social-link {
   margin: 0 10px;
   color: white;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.nav-header-social-link:hover {
+  color: rgb(241, 190, 185);
 }
