@@ -7,6 +7,13 @@
 .nav-header {
   background-color: rgb(215, 62, 49);
   padding: 7px 0;
+  transition: 0.4s;
+}
+
+.nav-header-scrolled {
+  background-color: rgb(15, 193, 144);
+  padding: 7px 0;
+  transition: 0.4s;
 }
 
 .nav-header-link {

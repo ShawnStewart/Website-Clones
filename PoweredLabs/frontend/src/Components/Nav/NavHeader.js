@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function NavHeader() {
+export default function NavHeader(props) {
   return (
-    <div className="nav-header">
+    <div className={"nav-header" + (props.scrolled ? "-scrolled" : "")}>
       <a
         className="nav-header-link"
         href="localhost:3000"
