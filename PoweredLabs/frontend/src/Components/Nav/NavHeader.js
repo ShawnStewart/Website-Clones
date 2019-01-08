@@ -9,7 +9,7 @@ export default function NavHeader(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span>1.800.555.1324</span>
+        <span>1.800.555.1234</span>
       </a>
       <a
         className="nav-header-link"
