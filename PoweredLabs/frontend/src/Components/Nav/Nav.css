@@ -50,6 +50,15 @@
   width: 220px;
   height: 90px;
   background-color: cyan;
+  transition: 0.5s;
+}
+
+.nav-main-logo-scrolled {
+  margin: 10px 0;
+  width: 132px;
+  height: 54px;
+  background-color: cyan;
+  transition: 0.5s;
 }
 
 .nav-main-menu {

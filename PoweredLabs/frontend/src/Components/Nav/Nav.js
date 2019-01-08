@@ -43,7 +43,13 @@ export default class Nav extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="nav-main-logo">Logo</div>
+            <div
+              className={
+                "nav-main-logo" + (this.state.scrolled ? "-scrolled" : "")
+              }
+            >
+              Logo
+            </div>
           </a>
 
           <ul className="nav-main-menu">
