@@ -1,8 +1,12 @@
+.nav {
+  position: sticky;
+  top: 0;
+}
+
+/* nav-header */
 .nav-header {
   background-color: rgb(215, 62, 49);
   padding: 7px 0;
-  font-weight: bold;
-  font-size: 0.9em;
 }
 
 .nav-header-link {
@@ -25,4 +29,39 @@
 
 .nav-header-social-link:hover {
   color: rgb(241, 190, 185);
+}
+
+/* nav-main */
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.nav-main-logo {
+  margin: 15px 0;
+  width: 220px;
+  height: 90px;
+  background-color: cyan;
+}
+
+.nav-main-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-main-menu li {
+  list-style: none;
+  margin: 0 10px;
+  display: flex;
+}
+
+.nav-main-menu li a {
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  color: rgb(102, 102, 102);
+  text-decoration: none;
 }
