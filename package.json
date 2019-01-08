@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ShawnStewart/Website-Clones/issues"
   },
-  "homepage": "https://github.com/ShawnStewart/Website-Clones#readme"
+  "homepage": "https://github.com/ShawnStewart/Website-Clones#readme",
+  "dependencies": {
+    "create-react-app": "^2.1.3"
+  }
 }
