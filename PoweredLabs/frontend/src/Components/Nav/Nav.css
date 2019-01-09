@@ -112,6 +112,26 @@
   background-color: rgb(61, 141, 193);
 }
 
+.services-link-active {
+  color: white;
+  background-color: rgb(191, 14, 16);
+}
+
+.portfolio-link-active {
+  color: white;
+  background-color: rgb(236, 104, 9);
+}
+
+.blogs-link-active {
+  color: white;
+  background-color: rgb(26, 144, 34);
+}
+
+.contact-link-active {
+  color: white;
+  background-color: rgb(61, 141, 193);
+}
+
 .nav-main-menu-link:hover {
   color: white;
 }

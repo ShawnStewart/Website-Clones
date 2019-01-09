@@ -8,6 +8,7 @@ export default class Nav extends Component {
     super(props);
 
     this.state = {
+      activeMenuItem: "",
       scrolled: false
     };
   }
@@ -23,14 +24,17 @@ export default class Nav extends Component {
   handleScroll = e => {
     if (!this.state.scrolled && document.documentElement.scrollTop > 30) {
       this.setState({ scrolled: true });
-      console.log("scrolled");
     } else if (
       this.state.scrolled &&
       document.documentElement.scrollTop <= 30
     ) {
       this.setState({ scrolled: false });
-      console.log("unscrolled");
     }
+  };
+
+  handleMenuItemClick = name => {
+    console.log(name);
+    this.setState({ activeMenuItem: name });
   };
 
   render() {
@@ -38,11 +42,7 @@ export default class Nav extends Component {
       <div className="nav">
         <NavHeader scrolled={this.state.scrolled} />
         <div className="container nav-main">
-          <a
-            href="http://localhost:3000"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="#" onClick={() => this.handleMenuItemClick("")}>
             <div
               className={
                 "nav-main-logo" + (this.state.scrolled ? "-scrolled" : "")
@@ -55,40 +55,48 @@ export default class Nav extends Component {
           <ul className="nav-main-menu">
             <li>
               <a
-                className="nav-main-menu-link services-link"
-                href="http://localhost:3000"
-                target="_blank"
-                rel="noopener noreferrer"
+                className={
+                  "nav-main-menu-link services-link" +
+                  (this.state.activeMenuItem === "services" ? "-active" : "")
+                }
+                href="#"
+                onClick={() => this.handleMenuItemClick("services")}
               >
                 Services
               </a>
             </li>
             <li>
               <a
-                className="nav-main-menu-link portfolio-link"
-                href="http://localhost:3000"
-                target="_blank"
-                rel="noopener noreferrer"
+                className={
+                  "nav-main-menu-link portfolio-link" +
+                  (this.state.activeMenuItem === "portfolio" ? "-active" : "")
+                }
+                href="#"
+                onClick={() => this.handleMenuItemClick("portfolio")}
               >
                 Portfolio
               </a>
             </li>
             <li>
               <a
-                className="nav-main-menu-link blogs-link"
-                href="http://localhost:3000"
-                target="_blank"
-                rel="noopener noreferrer"
+                className={
+                  "nav-main-menu-link blogs-link" +
+                  (this.state.activeMenuItem === "blogs" ? "-active" : "")
+                }
+                href="#"
+                onClick={() => this.handleMenuItemClick("blogs")}
               >
                 Blogs
               </a>
             </li>
             <li>
               <a
-                className="nav-main-menu-link contact-link"
-                href="http://localhost:3000"
-                target="_blank"
-                rel="noopener noreferrer"
+                className={
+                  "nav-main-menu-link contact-link" +
+                  (this.state.activeMenuItem === "contact" ? "-active" : "")
+                }
+                href="#"
+                onClick={() => this.handleMenuItemClick("contact")}
               >
                 Contact
               </a>
