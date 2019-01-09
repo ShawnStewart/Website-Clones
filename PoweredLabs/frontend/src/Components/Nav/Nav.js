@@ -55,6 +55,7 @@ export default class Nav extends Component {
           <ul className="nav-main-menu">
             <li>
               <a
+                className="nav-main-menu-link services-link"
                 href="http://localhost:3000"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,6 +65,7 @@ export default class Nav extends Component {
             </li>
             <li>
               <a
+                className="nav-main-menu-link portfolio-link"
                 href="http://localhost:3000"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,6 +75,7 @@ export default class Nav extends Component {
             </li>
             <li>
               <a
+                className="nav-main-menu-link blogs-link"
                 href="http://localhost:3000"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -82,6 +85,7 @@ export default class Nav extends Component {
             </li>
             <li>
               <a
+                className="nav-main-menu-link contact-link"
                 href="http://localhost:3000"
                 target="_blank"
                 rel="noopener noreferrer"
