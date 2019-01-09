@@ -26,7 +26,7 @@ export default function NavHeader(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>F</span>
+          <span>f</span>
         </a>
         <a
           className="nav-header-social-link"
@@ -34,7 +34,7 @@ export default function NavHeader(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>T</span>
+          <span>t</span>
         </a>
         <a
           className="nav-header-social-link"
