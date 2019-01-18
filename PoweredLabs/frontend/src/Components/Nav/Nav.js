@@ -48,7 +48,7 @@ export default class Nav extends Component {
                 "nav-main-logo" + (this.state.scrolled ? "-scrolled" : "")
               }
             >
-              Logo
+              Logo Here
             </div>
           </a>
 
